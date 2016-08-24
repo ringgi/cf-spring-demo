@@ -1,0 +1,11 @@
+---
+applications:
+- name: cf-spring-demo
+  memory: 512m
+  instances: 1
+  host: cf-spring-demo
+  domain: scapp.io
+  path: target/cf-spring-demo-1.0.war
+  buildpack: https://github.com/cloudfoundry/java-buildpack
+  services:
+      - maria-db
