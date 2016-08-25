@@ -14,16 +14,12 @@ Dependencies
 Usage
 -----
 
-Cloud
+Login to the Swisscom Application Cloud and switch to your Org and Space, then
 
     mvn clean package
     cf create-service mariadb small maria-d
     cf push 
 
-
-If you want to use the "manifest.yml" file to save typing the parameters for
-the comman "cf push", you probably need to edit the file prior to execution
-of "cf push".
 
 Configuration
 -------------
